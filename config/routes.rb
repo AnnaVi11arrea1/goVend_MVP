@@ -10,11 +10,6 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :spreadsheets, only: [:index] do
-    collection do
-      post 'update'
-    end
-  end
 
 
 end
